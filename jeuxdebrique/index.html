@@ -1,0 +1,38 @@
+ <!DOCTYPE html>
+ <html>
+ <head>
+ 	<meta charset="utf-8">
+ 	<title>Jeux de brique</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+ </head>
+ <body>
+ <section id="game" class="game">
+        <button id="rule" class="btn">Règle de jeux</button>
+        <button id="pause" class="btn">Pause</button>
+        <button id="jouer" class="btn">Jouer</button>
+        <div id="regles" class="regles">
+              <h2>Règles de jeu</h2>
+                <p>Utilisez les touches gauche ◄ et droite ► du clavier pour diriger la planche <br>
+                    La balle doit rebondir sur la planche pour rentrer briser les briques</p>
+                <p>Si elle tombe à même le sol, vous perdez une vie. Le jeu s'arrete dès que vous n'avez plus de vie</p>
+                <button id="close-btn" class="btn close-btn">Quitter</button>
+            
+        </div>
+        <div id="sound">
+          <img src="img/sound_on.png"  class="sounding" id="sounding">
+          
+        </div>
+        <div id="gameover">
+          <img src="img/you-won.png"  id=win>
+          <img src="img/game-over.png"  id="lose">
+          
+          <button id="rejouer" class="btn">Réjouer</button>
+        </div>
+        <canvas id="canvas" height="500" width="600"></canvas>
+
+
+ </section>
+ <script type="text/javascript" src="composants.js"></script>
+ <script type="text/javascript" src="game.js"></script>
+ </body>
+ </html>
